@@ -1,3 +1,27 @@
 docker pull centos
 docker run -it centos bin/bash
-install vim
+install any package
+
+all images 
+docker images
+
+docker history imageid
+
+all containers
+docker ps -a
+
+top|stop|rm|stats|attach|pause|unpause|kill
+docker option ContainerID 
+
+Docker file
+#This is a sample Image 
+FROM ubuntu 
+MAINTAINER demousr@gmail.com 
+
+RUN apt-get update 
+RUN apt-get install –y nginx 
+CMD [“echo”,”Image created”] 
+
+docker build
+sudo docker run -p 8080:8080 image
+
