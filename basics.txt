@@ -26,3 +26,11 @@ docker build
 sudo docker run -p 8080:8080 image
 
 docker-compose run web rails new . --force --no-deps --database=postgresql
+docker-compose build
+
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  password:
+  pool: 5
