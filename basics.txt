@@ -25,3 +25,4 @@ CMD [“echo”,”Image created”]
 docker build
 sudo docker run -p 8080:8080 image
 
+docker-compose run web rails new . --force --no-deps --database=postgresql
